@@ -1,3 +1,21 @@
+@-webkit-keyframes slide {
+  0% {
+    margin-top: -150vh;
+  }
+  100% {
+    margin-top: 5rem;
+  }
+}
+
+@keyframes slide {
+  0% {
+    margin-top: -150vh;
+  }
+  100% {
+    margin-top: 5rem;
+  }
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -24,7 +42,7 @@ p {
 }
 
 body {
-  background-image: url("/img/blur-clean.jpg");
+  background-image: url("./img/blur-clean.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: content-box;
@@ -93,23 +111,5 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   -webkit-animation: slide cubic-bezier(0.65, 0, 0.35, 1) 5s forwards;
           animation: slide cubic-bezier(0.65, 0, 0.35, 1) 5s forwards;
-}
-
-@-webkit-keyframes slide {
-  0% {
-    margin-top: -150vh;
-  }
-  100% {
-    margin-top: 5rem;
-  }
-}
-
-@keyframes slide {
-  0% {
-    margin-top: -150vh;
-  }
-  100% {
-    margin-top: 5rem;
-  }
 }
 /*# sourceMappingURL=style.css.map */

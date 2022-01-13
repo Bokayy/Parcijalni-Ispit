@@ -9,7 +9,7 @@
 // }
 
 body{
-    background-image:url("/img/blur-clean.jpg") ;
+    background-image:url("./img/blur-clean.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
     background-clip: content-box;
@@ -37,17 +37,8 @@ body{
         &:nth-child(3){
             background-color: $yellow;
             @include div_same;
-            animation: slide cubic-bezier(0.65, 0, 0.35, 1) 5s forwards;
+            @include anim;
         }
     }
 }
 
-@keyframes slide{
-    0%{
-        margin-top:-150vh;
-    }
-
-    100%{
-        margin-top: 5rem;
-    }
-}
