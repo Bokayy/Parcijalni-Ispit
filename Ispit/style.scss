@@ -27,17 +27,17 @@ body{
         &:nth-child(1){
             background-color: $black;
             @include div_same;
-            animation: slide cubic-bezier(0.65, 0, 0.35, 1) 2s forwards;
+            @include anim(2s);
         }
         &:nth-child(2){
             background-color: $red;
             @include div_same;
-            animation: slide cubic-bezier(0.65, 0, 0.35, 1) 3.5s forwards;
+            @include anim(3.5s);
         }
         &:nth-child(3){
             background-color: $yellow;
             @include div_same;
-            @include anim;
+            @include anim(5s);
         }
     }
 }

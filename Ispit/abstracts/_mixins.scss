@@ -15,8 +15,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@mixin anim{
-    animation: slide cubic-bezier(0.65, 0, 0.35, 1) 5s forwards;
+@mixin anim($time){
+    animation: slide cubic-bezier(0.65, 0, 0.35, 1) $time forwards;
 }
 
 @keyframes slide{
