@@ -1,0 +1,16 @@
+@mixin FAJ
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@mixin div_same{
+    padding: 4rem 7rem 4rem 7rem;
+    margin: 5rem 5rem 5rem 5rem;
+    color: $white;
+    border: 3px solid $white;
+    font-size: 8rem ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
